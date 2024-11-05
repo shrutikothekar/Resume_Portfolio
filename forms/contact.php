@@ -1,41 +1,39 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+// Set the response type to JSON
+header('Content-Type: application/json');
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+// Check if the request method is POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the JSON data from the POST request
+    $data = json_decode(file_get_contents("php://input"), true);
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    // Extract form details
+    $name = $data['name'];
+    $email = $data['email'];
+    $subject = $data['subject'];
+    $message = $data['message'];
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // Set up email details
+    $to = 'shrutikothekar01@gmail.com';
+    $email_subject = "Contact Form Submission: $subject";
+    $email_body = "You have received a new message from the contact form.\n\n".
+                  "Here are the details:\n".
+                  "Name: $name\n".
+                  "Email: $email\n".
+                  "Subject: $subject\n".
+                  "Message:\n$message";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    $headers = "From: noreply@example.com\n"; // Change "example.com" to your domain
+    $headers .= "Reply-To: $email";
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    // Attempt to send the email
+    if (mail($to, $email_subject, $email_body, $headers)) {
+        echo json_encode(["success" => true]);
+    } else {
+        echo json_encode(["success" => false, "error" => "Unable to send email. Please try again later."]);
+    }
+} else {
+    // If not a POST request, return an error
+    echo json_encode(["success" => false, "error" => "Invalid request method."]);
+}
 ?>

@@ -26,7 +26,46 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .resume-download {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
 
+    .resume-download .download-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    .resume-download .download-card h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .resume-download .download-card p {
+      margin-bottom: 30px;
+      color: #6c757d;
+    }
+
+    .resume-download .download-btn {
+      display: inline-block;
+      padding: 12px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-download .download-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 
 <body>
@@ -39,24 +78,25 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Shruti Kothekar</a></h1>
+        <img src="assets/img/profile-img11111.jpg" alt="Profile Image" class="img-fluid rounded-circle" style="width: 140px; height: 130px;">
+        <h1 class="text-light"><a href="index.html">Shruti Kothekar<span class="heart-icon">💗</span></a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/ShrutiK_01" target='_blank' class="twitter"><i class="bx bxl-twitter"></i></a>
+          <!-- <a href="https://twitter.com/ShrutiK_01" target='_blank' class="twitter"><i class="bx bxl-twitter"></i></a> -->
           <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-          <a href="https://www.instagram.com/shrutiiii_k_/" target='_blank'class="instagram" ><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/shrutikothekar" target='_blank' class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/shruti-kothekar-3a7739212/" target='_blank' class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/shrutiiii_k_/" style="cursor: pointer;"  target='_blank'class="instagram" ><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/shrutikothekar" target='_blank' style="cursor: pointer;"  class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/shruti-kothekar-7904772b7/" style="cursor: pointer;" target='_blank' class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span class="small">Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Certificates</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span class="small">Skills</span></a></li>
+          <li><a href="#Experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span class="small">Experience</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span class="small">Certificates</span></a></li>
+          <li><a href="#resumedownload" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span class="small">Resume</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -67,7 +107,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Shruti Kothekar</h1>
-      <p>I'm <span class="typed" data-typed-items="Web Developer, Full Stack Web Developer,"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Web Developer, Full Stack Developer, Software Developer,"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -82,25 +122,40 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile-img11.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Full Stack Web Developer.</h3>
-            <p class="fst-italic">To secure a position in a company where I can use my skills and abilities to make a contribution to the organization.</p>
+          <div class="col-lg-8 pt-1 pt-lg-0 content" data-aos="fade-left">
+            <h3>Full Stack Developer.</h3>
+            <p class="fst-italic">Proficient .NET MVC Core developer with 1 year of experience in building web applications. Skilled in .NET MVC Core with strong problem-solving abilities and a collaborative approach to teamwork. Dedicated to delivering high-quality solutions and continuously enhancing skills. Highly self-motivated and eager to learn new technologies in a dynamic tech environment.</p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 May 2001</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 96237 98166</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Talegaov, Dabhale, Pune</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span> Nagpur, Maharashtra</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachlor's Degree</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>shrutikothekar01@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span>https://github.com/shrutikothekar</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span class="small bold"><a href="https://github.com/shrutikothekar" target="_blank">https://github.com/shrutikothekar</a></span></li>
                 </ul>
+              </div>
+            </div>
+            <div>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h5><b>Bachelor of Engineering in Information Technology </b></h5>
+                <h6>2020 - 2023</h6>
+                <!-- <p>information Technology</p> -->
+                <p><em>RTMNU University, Nagpur, MH</em></p>
+              </div>
+              <div class="resume-item">
+                <h5><b>Diploma in Computer Science</b></h5>
+                <h6>2018 - 2020</h6>
+                <!-- <p>Computer Science Engineering</p> -->
+                <p><em>RTMNU University, Nagpur, MH</em></p>
               </div>
             </div>
             <p> </p>
@@ -116,18 +171,19 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-<p>
-• Jupyter Notebook, Power BI, Excel, and advanced Excel, Reporting, and
-visual representation, enabling effective decision-making.<br>
-• Web Development: Developing Interactive websites using Bootstrap, and
-JS, basic React, NodeJS.<br>
-• Database: PHP and MySQL Database.<br>
-• Familiarity with core Java, Python programming concepts.<br>
-• Problem-solving skills to identify and resolve technical issues efficiently.<br>
-• Ability to work collaboratively in team environments to achieve shared
-goals and deliver quality results.<br>
-• Self-motivated with a proactive approach to learning.<br>
-</p>
+            <p style="text-align: left;">
+            • <b>Web Development:</b> Proficient in C#, .NET Core Web API, Entity Framework, React.js, HTML, CSS, JavaScript (Node.js, Bootstrap, Tailwind CSS)<br>
+            • <b>Database Management:</b>
+            Experienced with SQL Server, PostgreSQL, Oracle, SQLite <br>
+            • <b>Tools & Technologies:</b> Visual Studio code, Git, Sublime Text, IIS Server <br>
+            • <b>Frameworks & Libraries:</b> Expertise in ASP.NET MVC Core design and development<br>
+            • <b>Backend Development:</b>
+            Skilled in developing and maintaining scalable, robust backend systems using ASP.NET MVC Core .<br>
+            • Problem-solving skills to identify and resolve technical issues efficiently.<br>
+            • Ability to work collaboratively in team environments to achieve shared
+            goals and deliver quality results.<br>
+            • Self-motivated with a proactive approach to learning.<br>
+            </p>
         </div>
 
         <div class="row skills-content">
@@ -142,23 +198,30 @@ goals and deliver quality results.<br>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
+              <span class="skill">Bootstrap <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">JavaScript <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">MySQL DataBase <i class="val">80%</i></span>
+              <span class="skill">React/NodeJs <i class="val">40%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -167,12 +230,41 @@ goals and deliver quality results.<br>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
             <div class="progress">
-              <span class="skill">PHP <i class="val">75%</i></span>
+              <span class="skill">ASP.NET MVC CORE <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
+            <div class="progress">
+              <span class="skill">C# <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PostgreSQL DB <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MSSQL Server DB <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL DB <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+             
+<!--
             <div class="progress">
               <span class="skill">Python <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
@@ -187,13 +279,8 @@ goals and deliver quality results.<br>
               </div>
             </div>
 
-
-            <div class="progress">
-              <span class="skill">React/NodeJs <i class="val">20%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+ -->
+            
 
             
             
@@ -204,74 +291,54 @@ goals and deliver quality results.<br>
       </div>
     </section><!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <!-- ======= Experienced Section ======= -->
+    <section id="Experience" class="Experience">
       <div class="container">
-
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2>Experience</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Experience </h3>
+            <h4 class="resume-title"><b>Experience</b></h4>
             <div class="resume-item pb-0">
-              <h4> Shruti Kothekar</h4>
-              <p><em>06 Months</em></p>
+              <h5>Aarkay Techno Consultants Pvt Ltd</h5>
+              <!-- <p><em>Intern</em></p> -->
+              <p><em>Sep 2023 – Present, Nagpur, India</em></p>
               <ul>
-                <p>At Inforadient Technoligy</p>
-                <p>Data Oprator</p>
-                <p>Nagpur</p>
+                <li>Gained hands-on experience in .NET Core MVC development and backend services.</li>
+                <li>Developed backend functionality for barcode reading and RDLC report generation. Experienced with SQL Server, PostgreSQL, Oracle, SQLite</li>
+                <li>Integrated Tally with the software to streamline accounting processes and implemented email integration via SMTP.</li>
+                <li>Created services to send follow-up reminders to customers, vendors, and employees.</li>
+                <li>Worked with PRN files to process and manage barcode data.</li>
+                <li>Enhanced the software's user interface to simplify tasks and improve user experience.</li>
               </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor's Degree</h4>
-              <h5>2020 - 2023</h5>
-              <p>information Technology</p>
-              <p><em>Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur, MH</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p>Computer Science Engineering</p>
-              <p><em>Maharashtra State Board Technical Education, MH</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Projects</h3>
+            <h4 class="resume-title"><b>Projects</b></h4>
             <div class="resume-item">
-              <h4>Online Bus Pass System</h4>
+              <h5>" Warehouse Management System "</h5>
               <ul>
-                <li>Developed a time-efficient website using PHP and MySQL database connectivity</li>
-                <li>Implemented features such as online bus pass applications and renewal.</li>
-                <li>Enabled online transactions for a seamless user experience.</li>
+                <li>Developed a comprehensive Warehouse Management System (WMS) with modules for sales orders, purchase orders, product storage, picking, loading, and dispatch operations.</li>
+                <li>Generated key reports such as aging reports, ledger reports, and product stock reports for efficient inventory management.</li>
+                <li>Managed diverse types of inventory, including roll bundles, hardware, software, systems, services, and marketing materials.</li>
+                <li>Integrated the system with Tally for seamless accounting and developed services for sending follow-up reminders to customers, vendors, and employees.</li>
+                <li>Built a Web API to optimize and streamline the order management process.</li>
+                <li>Implemented various features to enhance system functionality, user experience, and overall operational efficiency.</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Sales Data Analysis</h4>
+              <h5>" Tally Integrated Desktop Application "</h5>
               <ul>
-                <li>Analysed and transformed sales data using Python scripts and libraries</li>
-                <li>Presented visual representations of the data to identify trends and insights</li>
-                <li>Created a Power BI dashboard to provide comprehensive data analysis and visualization.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Arduino Projects</h4>
-              <ul>
-                <li>Collaborated in a team to work on various Arduino projects</li>
-                <li>Utilized Arduino controller and programming to interface with different sensors.</li>
-                <li>Developed projects such as programmable robots with sensors like IR, PIR,
-LDR, line-following robots, and Bluetooth-controlled Arduino robots with
-command and voice capabilities.</li>
+                <li>Easy and user friendly interface to make work easy with Tally software with system</li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
+    <!-- End Resume Section -->
+    
 
     <!-- ======= Certificates Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
@@ -296,7 +363,7 @@ command and voice capabilities.</li>
               <img src="assets/img/portfolio/ieee2023.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/ieee2023.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -306,7 +373,7 @@ command and voice capabilities.</li>
               <img src="assets/img/portfolio/gov.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/gov.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -316,7 +383,7 @@ command and voice capabilities.</li>
               <img src="assets/img/portfolio/hackerrank.png" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/hackerrank.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -326,7 +393,7 @@ command and voice capabilities.</li>
               <img src="assets/img/portfolio/mpir19.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/mpir19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -336,7 +403,7 @@ command and voice capabilities.</li>
               <img src="assets/img/portfolio/hackathon.jpg" width=88% class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/hackathon.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -344,7 +411,27 @@ command and voice capabilities.</li>
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
+
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resumedownload" class="resume-download">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="download-card text-center">
+              <h2>Download My Resume</h2>
+              <p>Get my professional resume in PDF format.</p>
+              <a href="assets/img/Shruti-Kothekar-Cv.pdf" target="_blank" download="Shruti-Kothekar-Resume" class="download-btn">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Resume Section -->
 
     <!-- ======= Services Section ======= 
     <section id="services" class="services">
@@ -392,57 +479,173 @@ command and voice capabilities.</li>
     </section>End Services Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <style>
+      .contact {
+          padding: 80px 0;
+          background-color: #f8f9fa;
+      }
+      
+      .section-title {
+          text-align: center;
+          margin-bottom: 50px;
+      }
+      
+      .section-title h2 {
+          font-size: 32px;
+          font-weight: bold;
+          position: relative;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          color: #333;
+      }
+      
+      .section-title h2::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 50px;
+          height: 3px;
+          background: #0d6efd;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      
+      .contact-info-box {
+          background: white;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+          transition: transform 0.3s ease;
+      }
+      
+      .contact-info-box:hover {
+          transform: translateY(-5px);
+      }
+      
+      .contact-info-item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 30px;
+          padding: 20px;
+          border-radius: 8px;
+          background-color: #f8f9fa;
+      }
+      
+      .contact-icon {
+          font-size: 24px;
+          color: #0d6efd;
+          margin-right: 20px;
+          padding: 12px;
+          background: rgba(13, 110, 253, 0.1);
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .contact-info-content h5 {
+          margin: 0 0 5px 0;
+          font-size: 18px;
+          font-weight: 600;
+          color: #333;
+      }
+      
+      .contact-info-content p {
+          margin: 0;
+          font-size: 16px;
+          color: #666;
+      }
+      
+      .map-container {
+          border-radius: 10px;
+          overflow: hidden;
+          margin-top: 30px;
+      }
+  </style>
+
+  <section id="contact" class="contact">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Talegaov, Dabhale, Pune</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>shrutikothekar01@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 96237 98166</p>
-              </div>
-              <iframe src="https://www.google.com/maps/d/embed?mid=1nxxfsdOOs2x2HPEsNV-YlJDLFzM&hl=en&ehbc=2E312F" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
+          <div class="section-title">
+              <h2>Get in Touch</h2>
+              <!-- <p class="text-muted">Feel free to contact me for any inquiries or opportunities</p> -->
           </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="contact-info-box">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="contact-info-item">
+                                  <div class="contact-icon">
+                                      <i class="bi bi-geo-alt"></i>
+                                  </div>
+                                  <div class="contact-info-content">
+                                    <h5>Location</h5>
+                                    <p>Nagpur, Maharashtra</p>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-4">
+                              <div class="contact-info-item">
+                                  <div class="contact-icon">
+                                      <i class="bi bi-envelope"></i>
+                                  </div>
+                                  <div class="contact-info-content">
+                                      <h5>Email</h5>
+                                      <p><a href="mailto:shrutikothekar01@gmail.com" class="text-decoration-none text-muted small">shrutikothekar01@gmail.com</a></p>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-4">
+                              <div class="contact-info-item">
+                                  <div class="contact-icon">
+                                      <i class="bi bi-phone"></i>
+                                  </div>
+                                  <div class="contact-info-content">
+                                      <h5>Phone</h5>
+                                      <p>+91 96237 98166<br>+91 75594 59728</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="map-container">
+                          <iframe src="https://www.google.com/maps/d/embed?mid=1nxxfsdOOs2x2HPEsNV-YlJDLFzM&hl=en&ehbc=2E312F" 
+                                  style="border:0; width: 100%; height: 350px;" 
+                                  allowfullscreen>
+                          </iframe>
+                      </div>
+<br>
+                      <div><p class="small text-center" ><b>Thank You</b><span class="heart-icon">💗</span></p></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form id="contactForm" onsubmit="sendEmail(event)" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name"><b>Your Name</b></label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name"><b>Your Email</b></label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name"><b>Subject</b></label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name"><b>Message</b></label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
@@ -451,13 +654,12 @@ command and voice capabilities.</li>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
+
             </form>
-          </div>
+          </div> -->
 
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+        
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -465,11 +667,51 @@ command and voice capabilities.</li>
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span> My Portfolio</span></strong>
+        <!-- &copy; Copyright <strong><span>   My Portfolio</span></strong> -->
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">Shruti_Kothekar</a>
-      </div>
+        <style>
+          .name-container {
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              padding: 8px 15px;
+              border-radius: 25px;
+              background: linear-gradient(145deg, #ffffff, #f0f0f0);
+              box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+              transition: all 0.3s ease;
+          }
+      
+          .name-container:hover {
+              transform: translateY(-2px);
+          }
+      
+          .name-container a {
+              text-decoration: none;
+              color: #333;
+              font-size: 1.2rem;
+          }
+      
+          .heart-icon {
+              color: #ff69b4;
+              font-size: 1.2rem;
+              animation: heartBeat 1.5s ease-in-out infinite;
+          }
+      
+          @keyframes heartBeat {
+              0% { transform: scale(1); }
+              14% { transform: scale(1.3); }
+              28% { transform: scale(1); }
+              42% { transform: scale(1.3); }
+              70% { transform: scale(1); }
+          }
+      </style>
+      
+          <a href="https://www.linkedin.com/in/shruti-kothekar-3a7739212/" target="_blank">
+              <b>Shruti Kothekar</b><span class="heart-icon">💗</span>
+          </a>
+      
+    </div>
     </div>
   </footer><!-- End  Footer -->
 
